@@ -29,10 +29,10 @@ public class R<T> {
         return r;
     }
 
-    public static <T> R<T> error(String msg) {
+    public static <T> R<T> error(int code, String msg) {
         R r = new R();
         r.msg = msg;
-        r.code = 0;
+        r.code = code;
         return r;
     }
 
